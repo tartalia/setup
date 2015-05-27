@@ -2,10 +2,12 @@
 # NodeJS setup
 
 # Install nvm: node-version manager
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | sudo sh
+sudo apt-get update
+sudo apt-get install build-essential libssl-dev
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | sh
 
 # Load nvm and install latest production node
-source $HOME/.nvm/nvm.sh
+source $HOME/.profile
 nvm install v0.12.4
 nvm use v0.12.4
 
