@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Backbone Model
+# key: bbmd
+# --
+var $1 = Backbone.Model.extend({
+    $2
+});

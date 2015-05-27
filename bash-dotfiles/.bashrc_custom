@@ -1,0 +1,8 @@
+# aliases
+alias xclip="xclip -sel clip"
+alias hk="heroku"
+
+# path definitions
+if [ -d ~/futils ]; then
+   export PATH=$PATH:~/futils
+fi
