@@ -15,3 +15,5 @@ ln -sb ./setup/dotfiles-bash/.bashrc .
 ln -sb ./setup/dotfiles-bash/.bashrc_custom .
 ln -sb ./setup/dotfiles-bash/.bash_functions .
 
+echo "Restart your session to reload bash configurations."
+
