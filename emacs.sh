@@ -12,7 +12,7 @@ if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
 
-ln -sb emacs-dotfiles/.screenrc .
-ln -sf emacs-dotfiles/.emacs.d .
-ln -sf emacs-dotfiles/.dircolors .
+ln -sb ./setup/dotfiles-emacs/.screenrc .
+ln -sf ./setup/dotfiles-emacs/.emacs.d .
+ln -sf ./setup/dotfiles-emacs/.dircolors .
 

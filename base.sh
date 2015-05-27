@@ -10,8 +10,8 @@ if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 
-ln -sb bash-dotfiles/.bash_profile .
-ln -sb bash-dotfiles/.bashrc .
-ln -sb bash-dotfiles/.bashrc_custom .
-ln -sb bash-dotfiles/.bash_functions .
+ln -sb ./setup/dotfiles-bash/.bash_profile .
+ln -sb ./setup/dotfiles-bash/.bashrc .
+ln -sb ./setup/dotfiles-bash/.bashrc_custom .
+ln -sb ./setup/dotfiles-bash/.bash_functions .
 
