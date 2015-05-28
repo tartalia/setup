@@ -11,10 +11,9 @@ source $HOME/.profile
 nvm install v0.12.4
 nvm use v0.12.4
 
-sudo ln -s /usr/local/bin/node /usr/bin/node
-sudo ln -s /usr/local/lib/node /usr/lib/node
-sudo ln -s /usr/local/bin/npm /usr/bin/npm
-sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
+sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/bin/node
+sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/lib/node
+sudo ln -s $HOME/.nvm/versions/node/v0.12.4/lib/node_modules/npm/bin/npm-cli.js /usr/bin/npm
 
 # Install jshint to allow checking of JS code within emacs
 sudo npm install -g jshint
