@@ -16,7 +16,7 @@
 (require 'whitespace)
 (require 'dired-x)
 (require 'compile)
-(require 'zencoding-mode)
+
 (ido-mode t)
 (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 1)
@@ -142,3 +142,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(js-indent-level 2))
+
+;; Zencoding
+(add-to-list 'load-path "~/.emacs.d/zencoding")
+(require 'zencoding-mode)
