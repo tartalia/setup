@@ -22,3 +22,5 @@ sudo npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
+# Install bower
+sudo npm install bower
