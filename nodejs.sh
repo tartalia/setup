@@ -3,7 +3,7 @@
 
 # Install nvm: node-version manager
 sudo apt-get update
-sudo apt-get install build-essential libssl-dev
+sudo apt-get install -y build-essential libssl-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | sh
 
 # Load nvm and install latest production node
@@ -26,4 +26,4 @@ sudo apt-get install -y rlwrap
 sudo npm install bower
 
 # Install sails
-sudo npm -g install sails
+sudo npm install -g sails
