@@ -65,6 +65,7 @@ export PATH=$HOME/bin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export LANG=en_US.UTF-8 
 
 # Add JAVA_HOME to PATH only if the variable was defined
 if [ ! -z "$JAVA_HOME" ]; then
