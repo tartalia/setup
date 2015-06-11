@@ -37,5 +37,5 @@ sudo npm install bower
 sudo npm install -g sails
 
 if [ ! -h /usr/bin/sails ] ; then
-    sudo ln -s $HOME/node_modules/sails/bin/sails.js /usr/bin/sails
+    sudo ln -s /usr/lib/node_modules/sails/bin/sails.js /usr/bin/sails
 fi
