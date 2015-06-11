@@ -24,3 +24,6 @@ sudo apt-get install -y rlwrap
 
 # Install bower
 sudo npm install bower
+
+# Install sails
+sudo npm -g install sails
