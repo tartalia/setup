@@ -11,9 +11,17 @@ source $HOME/.profile
 nvm install v0.12.4
 nvm use v0.12.4
 
-sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/bin/node
-sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/lib/node
-sudo ln -s $HOME/.nvm/versions/node/v0.12.4/lib/node_modules/npm/bin/npm-cli.js /usr/bin/npm
+if [ ! -h /usr/bin/node ] ; then
+    sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/bin/node
+fi
+
+if [ ! -h /usr/lib/node ] ; then
+    sudo ln -s $HOME/.nvm/versions/node/v0.12.4/bin/node /usr/lib/node
+fi
+
+if [ ! -h /usr/bin/npm ] ; then
+    sudo ln -s $HOME/.nvm/versions/node/v0.12.4/lib/node_modules/npm/bin/npm-cli.js /usr/bin/npm
+fi
 
 # Install jshint to allow checking of JS code within emacs
 sudo npm install -g jshint
@@ -28,7 +36,6 @@ sudo npm install bower
 # Install sails
 sudo npm install -g sails
 
-if [ ! -f /usr/bin/sails ]
-then
-    sudo ln -s $HOME/node_modules/sails/bin/sails.js sails
+if [ ! -h /usr/bin/sails ] ; then
+    sudo ln -s $HOME/node_modules/sails/bin/sails.js /usr/bin/sails
 fi
