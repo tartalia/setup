@@ -36,6 +36,9 @@ sudo npm install bower
 # Install sails
 sudo npm install -g sails
 
+# Install nodeamon for dev environment
+sudo npm install -g nodemon
+
 if [ ! -h /usr/bin/sails ] ; then
     sudo ln -s /usr/lib/node_modules/sails/bin/sails.js /usr/bin/sails
 fi
