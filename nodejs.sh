@@ -30,14 +30,12 @@ sudo npm install -g jshint
 # See: http://nodejs.org/api/repl.html#repl_repl
 sudo apt-get install -y rlwrap
 
-# Install bower
 sudo npm install bower
-
-# Install sails
 sudo npm install -g sails
-
-# Install nodeamon for dev environment
 sudo npm install -g nodemon
+sudo npm install -g db-migrate
+
+# Install db-migra
 
 if [ ! -h /usr/bin/sails ] ; then
     sudo ln -s /usr/lib/node_modules/sails/bin/sails.js /usr/bin/sails
