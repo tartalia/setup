@@ -241,7 +241,7 @@ git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 
 # 2.10) other aliases
-alias db-migrate="mig"
+alias mig="db-migrate"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
