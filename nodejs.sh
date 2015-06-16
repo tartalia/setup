@@ -31,6 +31,7 @@ sudo npm install -g jshint
 sudo apt-get install -y rlwrap
 
 sudo npm install bower
+sudo npm install sails
 sudo npm install -g sails
 sudo npm install -g nodemon
 sudo npm install -g db-migrate
