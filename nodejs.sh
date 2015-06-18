@@ -35,6 +35,7 @@ sudo npm install sails
 sudo npm install -g sails
 sudo npm install -g nodemon
 sudo npm install -g db-migrate
+sudo npm install -g mocha
 
 # Install db-migra
 
